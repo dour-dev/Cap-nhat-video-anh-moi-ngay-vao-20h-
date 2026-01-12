@@ -3,33 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Scroll Video & Image</title>
+<title>Video Scroll</title>
 
 <style>
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
-body{
-  background:black;
-  overflow:hidden;
-}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:#000;overflow:hidden;}
 .feed{
   height:100vh;
   overflow-y:scroll;
   scroll-snap-type:y mandatory;
 }
-.feed::-webkit-scrollbar{
-  display:none;
-}
+.feed::-webkit-scrollbar{display:none;}
 .item{
   height:100vh;
-  width:100%;
   position:relative;
   scroll-snap-align:start;
 }
-video, img{
+video{
   width:100%;
   height:100%;
   object-fit:cover;
@@ -39,7 +29,7 @@ video, img{
   bottom:80px;
   right:20px;
   background:rgba(0,0,0,.6);
-  color:white;
+  color:#fff;
   border:none;
   font-size:22px;
   padding:10px;
@@ -52,18 +42,18 @@ video, img{
 
 <div class="feed">
 
+  <!-- VIDEO 1 -->
   <div class="item">
-    <video src="aidex/[savetwt.com] ____________ SEALROOM - 2007634594439610689 - 1080x1920.mp4" loop playsinline></video>
-    <button class="mute">🔊</button>
+    <video src="TWMate.com-5a45890df2334445d86a3931774be548.mp4"
+           loop playsinline muted></video>
+    <button class="mute">🔇</button>
   </div>
 
+  <!-- VIDEO 2 -->
   <div class="item">
-    <img src="image1.jpg">
-  </div>
-
-  <div class="item">
-    <video src="Ig/TWMate.com-5a45890df2334445d86a3931774be548.mp4" loop playsinline></video>
-    <button class="mute">🔊</button>
+    <video src="[savetwt.com] ____________ SEALROOM - 2007634594439610689 - 1080x1920.mp4"
+           loop playsinline muted></video>
+    <button class="mute">🔇</button>
   </div>
 
 </div>
